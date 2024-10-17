@@ -19,6 +19,14 @@ function listar_todo($conn, $tabla){
 
 } 
 
+function categoria_Particular($conn, $tabla, $id){
+    
+    $sqlPersonajes = "SELECT * FROM " . $tabla . " WHERE id = " . $id ;
+
+    $result= $conn->query($sqlPersonajes);
+
+    return $result->fetch_all(MYSQLI_ASSOC);
+}
 
 
 
