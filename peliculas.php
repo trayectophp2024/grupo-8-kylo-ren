@@ -50,8 +50,6 @@ $producto = $productos[0] ?? null;
                             <li class="list-group-item"><?= $producto['director'] ?></li>
                             <li class="list-group-item"><?= $producto['anio_extreno'] ?></li>
                             <li class="list-group-item"><?= $producto['duracion'] ?></li>
-                            <li class="list-group-item"><?= $producto[''] ?></li>
-
                         </ul>
                     </div>
                 </div>

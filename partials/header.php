@@ -56,11 +56,11 @@
 
         <div class="d-flex justify-content-around" id="navbarNav" style="color: #FFC600;  max-width:1000px">
 
-          <a class="nav-link fs-3" href="">Peliculas</a>
+          <a class="nav-link fs-3" href="previews.php?categoria=peliculas">Peliculas</a>
 
           <a class="nav-link fs-3" href="previews.php?categoria=personajes">Personajes</a>
 
-          <a class="nav-link fs-3" href="#">Sables</a>
+          <a class="nav-link fs-3" href="previews.php?categoria=sables">Sables</a>
 
           <a class="nav-link fs-3" href="previews.php?categoria=naves">Naves</a>
 
