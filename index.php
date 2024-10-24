@@ -28,6 +28,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><?= $personaje['nombre']  ?></h5>
                                 <a href="personajes.php?id=<?= $personaje['id']  ?>" class="btn btn-dark">Ver</a>
+                                
                             </div>
                         </div>
 

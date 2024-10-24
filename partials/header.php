@@ -65,6 +65,8 @@
 
           <a class="nav-link fs-3" href="previews.php?categoria=naves">Naves</a>
 
+          <a class="nav-link fs-3" href="videos.php">Videos</a>
+
         </div>
 
       </nav>

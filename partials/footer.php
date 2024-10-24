@@ -1,6 +1,14 @@
 
-<footer class="bg-warning ">
-  <p class="py-4 text-center ">&copy; terminos y codiciones, contacto, nosotros,redes sociales</p>
+<footer class=" d-flex justify-content-between align-items-center p-5 ">
+  
+
+  <div class="row d-block link-underline-opacity-0">
+     <a class="fs-4 link-dark " href="">Terminos y Condiciones</a>
+     <a class="fs-4 link-dark" href="">Contacto</a>
+     <a class="fs-4 link-dark" href="creditos.php">Nosotros</a>
+     <a class="fs-4 link-dark" href="">Redes Sociales</a>
+
+  </div>
     
     <div class="redes-sociales">
       <a href="#">

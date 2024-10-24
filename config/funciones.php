@@ -35,7 +35,7 @@ function buscar_personajes($conn, $termino_busqueda){
 
     $termino_busqueda = $conn->real_escape_string($termino_busqueda);
 
-    $sqlPersonajes = "SELECT 'personajes' as tabla, id, nombre, descripcion, especie, afiliacion, planeta_natal, habilidades, arma, actor, imagen FROM figuras
+    $sqlPersonajes = "SELECT 'personajes' as tabla, id, nombre, descripcion, especie, afiliacion, planeta_natal, habilidades, arma, actor, imagen FROM personajes
     WHERE lower(nombre) LIKE '%$termino_busqueda%' 
     ";
 
@@ -43,22 +43,22 @@ function buscar_personajes($conn, $termino_busqueda){
     WHERE lower(nombre) LIKE '%$termino_busqueda%' 
     ";
 
-    $sqlPeliculas = "SELECT 'peliculas' as tabla, id, titulo, descripcion, director, anio_extreno, duracion, imagen FROM peliculas
+    $sqlPeliculas = "SELECT 'peliculas' as tabla, id, nombre, descripcion, director, anio_extreno, duracion, imagen FROM peliculas
     WHERE lower(nombre) LIKE '%$termino_busqueda%'
     ";
 
-     $sqlSables = "SELECT 'sables' as tabla, id, nombre, descripcion, color, propietario, afiliacion, cristal imagen FROM sables
+     $sqlSables = "SELECT 'sables' as tabla, id, nombre, descripcion, color, propietario, afiliacion, cristal, imagen FROM sables
     WHERE lower(nombre) LIKE '%$termino_busqueda%'
 
 
 ";
     
     $resultPersonajes = $conn->query($sqlPersonajes)->fetch_all(MYSQLI_ASSOC);
-    $resultnaves = $conn->query($sqlNaves)->fetch_all(MYSQLI_ASSOC);
+    $resultNaves = $conn->query($sqlNaves)->fetch_all(MYSQLI_ASSOC);
     $resultPeliculas = $conn->query($sqlPeliculas)->fetch_all(MYSQLI_ASSOC);
     $resultSables = $conn->query($sqlSables)->fetch_all(MYSQLI_ASSOC);
 
-    $resultado = array_merge($resultPersonajes, $resultnaves,$resultPeliculas, $resultSables);
+    $resultado = array_merge($resultPersonajes, $resultNaves, $resultPeliculas, $resultSables);
 
     return $resultado;
 

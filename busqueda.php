@@ -29,8 +29,8 @@ if ($termino_busqueda) {
                         <img src="img/<?= $producto['imagen'] ?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title"><?= $producto['nombre'] ?></h5>
-                            <h5 class="card-title text-success">$<?= $producto['precio'] ?></h5>
-                            <a href="producto_particular.php?categorias=<?= $producto['tabla'] ?>&id=<?= $producto['id'] ?> " class="btn btn-primary">Ver</a>
+                         
+                            <a href="<?= $producto['tabla'] ?>.php?categorias=<?= $producto['tabla'] ?>&id=<?= $producto['id'] ?> " class="btn btn-primary">Ver</a>
                         </div>
                     </div>
                 </div>
