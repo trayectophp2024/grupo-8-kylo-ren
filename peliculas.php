@@ -49,7 +49,7 @@ $producto = $productos[0] ?? null;
                             <li class="list-group-item">Episodio: <?= $producto['episodio'] ?></li>
                             <li class="list-group-item">Diretor: <?= $producto['director'] ?></li>
                             <li class="list-group-item">Anio de Extreno: <?= $producto['anio_extreno'] ?></li>
-                            <li class="list-group-item">Duracion: <?= $producto['duracion'] ?></li>
+                            <li class="list-group-item">Duracion: <?= $producto['duracion'] ?> Minutos</li>
                         </ul>
                     </div>
                 </div>
