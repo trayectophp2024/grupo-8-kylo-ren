@@ -45,10 +45,10 @@ $producto = $productos[0] ?? null;
                         <h5 class="card-title"><?= $producto['nombre'] ?></h5>
                         <p class="card-text"> <?= $producto['descripcion'] ?></p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><?= $producto['color'] ?></li>
-                            <li class="list-group-item"><?= $producto['propietario'] ?></li>
-                            <li class="list-group-item"><?= $producto['afiliacion'] ?></li>
-                            <li class="list-group-item"><?= $producto['cristal'] ?></li>
+                            <li class="list-group-item">Color: <?= $producto['color'] ?></li>
+                            <li class="list-group-item">Propíetario: <?= $producto['propietario'] ?></li>
+                            <li class="list-group-item">Afiliacion: <?= $producto['afiliacion'] ?></li>
+                            <li class="list-group-item">Cristal: <?= $producto['cristal'] ?></li>
                         </ul>
                     </div>
                 </div>

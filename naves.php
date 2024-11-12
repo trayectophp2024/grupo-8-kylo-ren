@@ -45,12 +45,12 @@ $producto = $productos[0] ?? null;
                         <h5 class="card-title"><?= $producto['nombre'] ?></h5>
                         <p class="card-text"> <?= $producto['descripcion'] ?></p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><?= $producto['tipo'] ?></li>
-                            <li class="list-group-item"><?= $producto['fabricante'] ?></li>
-                            <li class="list-group-item"><?= $producto['longitud'] ?></li>
-                            <li class="list-group-item"><?= $producto['velocidad_max'] ?></li>
-                            <li class="list-group-item"><?= $producto['armamento'] ?></li>
-                            <li class="list-group-item"><?= $producto['capacidad'] ?></li>
+                            <li class="list-group-item">Tipo: <?= $producto['tipo'] ?></li>
+                            <li class="list-group-item">Fabricante: <?= $producto['fabricante'] ?></li>
+                            <li class="list-group-item">Longitud: <?= $producto['longitud'] ?></li>
+                            <li class="list-group-item">Velocidad Maxima: <?= $producto['velocidad_max'] ?></li>
+                            <li class="list-group-item">Armamento: <?= $producto['armamento'] ?></li>
+                            <li class="list-group-item">Capacidad: <?= $producto['capacidad'] ?></li>
 
                         </ul>
                     </div>

@@ -27,7 +27,7 @@
                             <img height="300px" width="250px" src="img/<?= $personaje['imagen']  ?>" class="card-img" alt="">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $personaje['nombre']  ?></h5>
-                                <a href="personajes.php?id=<?= $personaje['id']  ?>" class="btn btn-dark">Ver</a>
+                                <a href="personajes.php?categorias=personajes&id=<?= $personaje['id']  ?>" class="btn btn-dark">Ver</a>
                                 
                             </div>
                         </div>

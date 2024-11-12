@@ -30,8 +30,6 @@ function categoria_Particular($conn, $tabla, $id){
 
 function buscar_personajes($conn, $termino_busqueda){
 
-  
-
 
     $termino_busqueda = $conn->real_escape_string($termino_busqueda);
 
